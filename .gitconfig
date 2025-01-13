@@ -1,0 +1,25 @@
+[init]
+	defaultBranch = main
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFvk4TNmYsvW8rn3JN8NIo5Uv8d234beddKK5bAF51+a
+	name = Richard Annand
+	email = richard+git@ohheyrj.co.uk
+[commit]
+	gpgsign = true
+[ghq]
+	root = /Users/richard/repos
+[pull]
+	ff = only
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[push]
+	autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = vim

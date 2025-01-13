@@ -1,0 +1,8 @@
+terraform 1.10.3
+minikube 1.26.0
+helm 3.9.2
+kubectl 1.29.3
+aws-nuke 2.19.0
+kompose 1.33.0
+gcloud 427.0.0
+zoxide 0.9.6
